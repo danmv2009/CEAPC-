@@ -1,0 +1,789 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Centro Educativo Adventista de Paso Canoas</title>
+  <meta name="description" content="Colegio Adventista de Paso Canoas – Educación cristiana de excelencia en Costa Rica." />
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700;900&family=Raleway:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+
+  <!-- Bootstrap 5 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+
+  <!-- Bootstrap Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet" />
+
+  <!-- AOS Animations -->
+  <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet" />
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ═══════════════════════════════════════════════
+       NAVBAR
+  ════════════════════════════════════════════════ -->
+  <nav class="navbar navbar-expand-lg fixed-top" id="mainNav">
+    <div class="container">
+      <!-- LOGO -->
+      <a class="navbar-brand d-flex align-items-center gap-2" href="#inicio">
+        <!-- ★ REEMPLAZA esta imagen con el logo real del colegio ★ -->
+        <div class="logo-placeholder">
+          <i class="bi bi-mortarboard-fill"></i>
+        </div>
+        <div class="brand-text">
+          <span class="brand-title">Centro Educativo Adventista</span>
+          <span class="brand-sub">Paso Canoas</span>
+        </div>
+      </a>
+
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu"
+        aria-controls="navMenu" aria-expanded="false" aria-label="Abrir menú">
+        <span class="toggler-icon"><i class="bi bi-list"></i></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navMenu">
+        <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-1">
+          <li class="nav-item"><a class="nav-link" href="#inicio">Inicio</a></li>
+          <li class="nav-item"><a class="nav-link" href="#informacion">Información</a></li>
+          <li class="nav-item"><a class="nav-link" href="#matriculas">Matrículas</a></li>
+          <li class="nav-item"><a class="nav-link" href="#galeria">Galería</a></li>
+          <li class="nav-item"><a class="nav-link" href="#plataformas">Plataformas</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contacto">Contacto</a></li>
+          <li class="nav-item ms-lg-2">
+            <a class="btn btn-gold-outline btn-sm px-3" href="#plataformas">
+              <i class="bi bi-box-arrow-in-right me-1"></i>Ingresar
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ═══════════════════════════════════════════════
+       HERO / BANNER
+  ════════════════════════════════════════════════ -->
+  <section id="inicio" class="hero-section">
+    <!-- Carrusel de banners -->
+    <div id="heroCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-interval="5000">
+      <div class="carousel-inner">
+
+        <!-- ★ SLIDE 1 – Reemplaza src con tu foto real ★ -->
+        <div class="carousel-item active">
+          <div class="hero-slide" style="background-image: url('https://ceapasocanoas.com/wp-content/uploads/2025/08/Imagen-de-WhatsApp-2025-08-16-a-las-16.58.36_376ac115-1536x864.jpg');">
+            <div class="hero-overlay"></div>
+            <div class="hero-content container">
+              <span class="hero-badge" data-aos="fade-down">Educación Cristiana de Excelencia</span>
+              <h1 class="hero-title" data-aos="fade-up" data-aos-delay="100">
+                Colegio Adventista<br/><em>de Paso Canoas</em>
+              </h1>
+              <p class="hero-desc" data-aos="fade-up" data-aos-delay="200">
+                Formando líderes íntegros con valores cristianos para servir a Dios y a la humanidad.
+              </p>
+              <div class="hero-actions" data-aos="fade-up" data-aos-delay="300">
+                <a href="#matriculas" class="btn btn-gold">Matricúlate Ahora</a>
+                <a href="#informacion" class="btn btn-outline-light">Conoce Más</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- ★ SLIDE 2 – Reemplaza src con tu foto real ★ -->
+        <div class="carousel-item">
+          <div class="hero-slide" style="background-image: url('https://images.unsplash.com/photo-1580582932707-520aed937b7b?w=1600&q=80');">
+            <div class="hero-overlay"></div>
+            <div class="hero-content container">
+              <span class="hero-badge">Excelencia Académica</span>
+              <h1 class="hero-title">Formando el Carácter<br/><em>del Mañana</em></h1>
+              <p class="hero-desc">Un ambiente seguro, espiritual e innovador para el desarrollo integral de tus hijos.</p>
+              <div class="hero-actions">
+                <a href="#galeria" class="btn btn-gold">Ver Galería</a>
+                <a href="#contacto" class="btn btn-outline-light">Contáctanos</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- ★ SLIDE 3 – Reemplaza src con tu foto real ★ -->
+        <div class="carousel-item">
+          <div class="hero-slide" style="background-image: url('https://scontent.ffon1-1.fna.fbcdn.net/v/t39.30808-6/607982334_849001061276439_3397852757814704767_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=833d8c&_nc_ohc=pAFWk0o4V7QQ7kNvwGctsbi&_nc_oc=AdpYCZlyDaLnz62ImwapnSvEN59S1W8ch7zf6wsDoW84LWpfBeZ_DnW5m9JNBhYqGSY&_nc_zt=23&_nc_ht=scontent.ffon1-1.fna&_nc_gid=zldToNNrxjO0T00aXd4YTw&_nc_ss=7b2a8&oh=00_Af5JmoZyeAWw2EkvTpWgha6lOpdNNGGN2pRJ0gmd_VCp9w&oe=6A11A568');">
+            <div class="hero-overlay"></div>
+            <div class="hero-content container">
+              <span class="hero-badge">Comunidad & Fe</span>
+              <h1 class="hero-title">Unidos en Fe,<br/><em>Crecer en Servicio</em></h1>
+              <p class="hero-desc">Parte de la red educativa adventista con presencia en toda Centroamérica.</p>
+              <div class="hero-actions">
+                <a href="#plataformas" class="btn btn-gold">Plataformas Digitales</a>
+                <a href="#informacion" class="btn btn-outline-light">Nuestra Historia</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Controles -->
+      <button class="carousel-control-prev" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#heroCarousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon"></span>
+      </button>
+
+      <!-- Indicadores -->
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="0" class="active"></button>
+        <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="1"></button>
+        <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="2"></button>
+      </div>
+    </div>
+
+    <!-- Scroll indicator -->
+    <div class="scroll-indicator">
+      <div class="scroll-dot"></div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════════
+       MISIÓN / VISIÓN / ESTADÍSTICAS
+  ════════════════════════════════════════════════ -->
+  <section class="mv-section">
+    <div class="container">
+      <div class="row g-4">
+        <div class="col-md-6" data-aos="fade-right">
+          <div class="mv-card">
+            <div class="mv-icon"><i class="bi bi-eye-fill"></i></div>
+            <h3 class="mv-title">Nuestra Visión</h3>
+            <p class="mv-text">Ser una institución educativa de excelencia reconocida por la formación integral de jóvenes con valores adventistas, comprometidos con Dios, la familia y la sociedad costarricense y centroamericana.</p>
+          </div>
+        </div>
+        <div class="col-md-6" data-aos="fade-left">
+          <div class="mv-card mv-card--gold">
+            <div class="mv-icon"><i class="bi bi-bullseye"></i></div>
+            <h3 class="mv-title">Nuestra Misión</h3>
+            <p class="mv-text">Brindar educación cristiana adventista de calidad que desarrolle las facultades físicas, mentales, sociales y espirituales de cada estudiante, preparándoles para el servicio en esta vida y para la eternidad.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Estadísticas -->
+      <div class="stats-row row g-3 mt-2">
+        <div class="col-6 col-md-3" data-aos="zoom-in" data-aos-delay="0">
+          <div class="stat-box">
+            <span class="stat-number" data-target="30">0</span><span class="stat-plus">+</span>
+            <span class="stat-label">Años de Historia</span>
+          </div>
+        </div>
+        <div class="col-6 col-md-3" data-aos="zoom-in" data-aos-delay="100">
+          <div class="stat-box">
+            <span class="stat-number" data-target="500">0</span><span class="stat-plus">+</span>
+            <span class="stat-label">Estudiantes Activos</span>
+          </div>
+        </div>
+        <div class="col-6 col-md-3" data-aos="zoom-in" data-aos-delay="200">
+          <div class="stat-box">
+            <span class="stat-number" data-target="40">0</span><span class="stat-plus">+</span>
+            <span class="stat-label">Docentes Calificados</span>
+          </div>
+        </div>
+        <div class="col-6 col-md-3" data-aos="zoom-in" data-aos-delay="300">
+          <div class="stat-box">
+            <span class="stat-number" data-target="98">0</span><span class="stat-plus">%</span>
+            <span class="stat-label">Tasa de Graduación</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════════
+       SECCIÓN: INFORMACIÓN
+  ════════════════════════════════════════════════ -->
+  <section id="informacion" class="section-info">
+    <div class="container">
+      <div class="section-header text-center" data-aos="fade-up">
+        <span class="section-label">Quiénes Somos</span>
+        <h2 class="section-title">Nuestra Historia y Valores</h2>
+        <div class="title-ornament"></div>
+      </div>
+
+      <!-- Historia -->
+      <div class="row align-items-center g-5 mb-5">
+        <div class="col-lg-6" data-aos="fade-right">
+          <!-- ★ Reemplaza con foto histórica del colegio ★ -->
+          <div class="img-frame">
+            <img src="https://images.unsplash.com/photo-1497633762265-9d179a990aa6?w=800&q=80"
+              alt="Historia del Colegio Adventista de Paso Canoas" class="img-fluid rounded-custom" />
+            <div class="img-badge">Desde 1990</div>
+          </div>
+        </div>
+        <div class="col-lg-6" data-aos="fade-left">
+          <span class="subsection-tag">Historia</span>
+          <h3 class="subsection-title">Raíces que Forjan el Futuro</h3>
+          <p>El Colegio Adventista de Paso Canoas fue fundado con el propósito de ofrecer una alternativa educativa cristiana en la región fronteriza sur de Costa Rica. Desde sus inicios, la institución ha estado comprometida con la formación de jóvenes íntegros, fundamentada en los principios de la educación adventista.</p>
+          <p>A lo largo de los años, el colegio ha crecido en infraestructura, personal y cobertura académica, respondiendo a las necesidades educativas de la comunidad de Paso Canoas, Corredores y zonas aledañas, siempre manteniendo como eje central la fe en Dios y la excelencia académica.</p>
+          <a href="#contacto" class="btn btn-navy mt-2">Contáctanos <i class="bi bi-arrow-right ms-1"></i></a>
+        </div>
+      </div>
+
+      <!-- Valores Adventistas -->
+      <div class="values-block" data-aos="fade-up">
+        <h3 class="text-center mb-4">Valores y Principios Adventistas</h3>
+        <div class="row g-3">
+          <div class="col-6 col-md-4 col-lg-2">
+            <div class="value-card">
+              <i class="bi bi-book-half"></i>
+              <span>Fe Bíblica</span>
+            </div>
+          </div>
+          <div class="col-6 col-md-4 col-lg-2">
+            <div class="value-card">
+              <i class="bi bi-heart-fill"></i>
+              <span>Amor al Prójimo</span>
+            </div>
+          </div>
+          <div class="col-6 col-md-4 col-lg-2">
+            <div class="value-card">
+              <i class="bi bi-shield-check"></i>
+              <span>Integridad</span>
+            </div>
+          </div>
+          <div class="col-6 col-md-4 col-lg-2">
+            <div class="value-card">
+              <i class="bi bi-people-fill"></i>
+              <span>Servicio</span>
+            </div>
+          </div>
+          <div class="col-6 col-md-4 col-lg-2">
+            <div class="value-card">
+              <i class="bi bi-flower1"></i>
+              <span>Salud Integral</span>
+            </div>
+          </div>
+          <div class="col-6 col-md-4 col-lg-2">
+            <div class="value-card">
+              <i class="bi bi-stars"></i>
+              <span>Excelencia</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Oferta Académica -->
+      <div class="mt-5" data-aos="fade-up">
+        <h3 class="text-center mb-4">Oferta Académica</h3>
+        <div class="row g-4">
+          <div class="col-md-4">
+            <div class="academic-card">
+              <div class="academic-icon bg-blue-light">
+                <i class="bi bi-emoji-smile-fill"></i>
+              </div>
+              <h4>Preescolar</h4>
+              <ul>
+                <li>Materno</li>
+                <li>Transición</li>
+                <li>Kínder</li>
+              </ul>
+              <div class="academic-age">3 – 6 años</div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="academic-card academic-card--featured">
+              <div class="academic-icon bg-gold">
+                <i class="bi bi-pencil-fill"></i>
+              </div>
+              <h4>Primaria</h4>
+              <ul>
+                <li>I Ciclo (1°– 3° grado)</li>
+                <li>II Ciclo (4°– 6° grado)</li>
+                <li>Inglés integrado</li>
+              </ul>
+              <div class="academic-age">6 – 12 años</div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="academic-card">
+              <div class="academic-icon bg-blue-dark">
+                <i class="bi bi-mortarboard-fill"></i>
+              </div>
+              <h4>Secundaria</h4>
+              <ul>
+                <li>III Ciclo (7°– 9°)</li>
+                <li>Bachillerato (10°– 11°)</li>
+                <li>Alineado MEP</li>
+              </ul>
+              <div class="academic-age">12 – 17 años</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════════
+       SECCIÓN: MATRÍCULAS
+  ════════════════════════════════════════════════ -->
+  <section id="matriculas" class="section-matriculas">
+    <div class="container">
+      <div class="section-header text-center" data-aos="fade-up">
+        <span class="section-label">Únete a Nuestra Familia</span>
+        <h2 class="section-title">Proceso de Matrícula</h2>
+        <div class="title-ornament title-ornament--light"></div>
+      </div>
+
+      <div class="row g-4 align-items-start">
+        <!-- Requisitos -->
+        <div class="col-lg-6" data-aos="fade-right">
+          <div class="req-card">
+            <h3 class="req-title"><i class="bi bi-clipboard2-check-fill me-2"></i>Requisitos de Matrícula</h3>
+            <div class="req-list">
+              <div class="req-item">
+                <div class="req-num">01</div>
+                <div>
+                  <strong>Documentación del estudiante</strong>
+                  <p>Copia de cédula de identidad o pasaporte del estudiante (para mayores de 12 años).</p>
+                </div>
+              </div>
+              <div class="req-item">
+                <div class="req-num">02</div>
+                <div>
+                  <strong>Documentación de padres/tutores</strong>
+                  <p>Copia de cédula de identidad de padre, madre o encargado legal.</p>
+                </div>
+              </div>
+              <div class="req-item">
+                <div class="req-num">03</div>
+                <div>
+                  <strong>Certificación de notas</strong>
+                  <p>Calificaciones del año lectivo anterior selladas por la institución de procedencia.</p>
+                </div>
+              </div>
+              <div class="req-item">
+                <div class="req-num">04</div>
+                <div>
+                  <strong>Fotografías recientes</strong>
+                  <p>2 fotografías tamaño pasaporte del estudiante con fondo blanco.</p>
+                </div>
+              </div>
+              <div class="req-item">
+                <div class="req-num">05</div>
+                <div>
+                  <strong>Carta de buena conducta</strong>
+                  <p>Emitida por la institución educativa anterior (niveles 7° en adelante).</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Formulario de inscripción -->
+        <div class="col-lg-6" data-aos="fade-left">
+          <div class="form-card">
+            <h3 class="form-card-title"><i class="bi bi-person-plus-fill me-2"></i>Inscripción Rápida</h3>
+            <form id="formMatricula" novalidate>
+              <div class="mb-3">
+                <label class="form-label">Nombre completo del estudiante *</label>
+                <input type="text" class="form-control custom-input" placeholder="Ej. Juan Pérez González" required />
+              </div>
+              <div class="row g-3 mb-3">
+                <div class="col-6">
+                  <label class="form-label">Edad *</label>
+                  <input type="number" class="form-control custom-input" placeholder="Ej. 10" min="3" max="18" required />
+                </div>
+                <div class="col-6">
+                  <label class="form-label">Nivel académico *</label>
+                  <select class="form-select custom-input" required>
+                    <option value="" disabled selected>Seleccionar</option>
+                    <option>Preescolar</option>
+                    <option>1° Grado</option>
+                    <option>2° Grado</option>
+                    <option>3° Grado</option>
+                    <option>4° Grado</option>
+                    <option>5° Grado</option>
+                    <option>6° Grado</option>
+                    <option>7° Año</option>
+                    <option>8° Año</option>
+                    <option>9° Año</option>
+                    <option>10° Año</option>
+                    <option>11° Año</option>
+                  </select>
+                </div>
+              </div>
+              <div class="mb-3">
+                <label class="form-label">Nombre del encargado *</label>
+                <input type="text" class="form-control custom-input" placeholder="Nombre del padre, madre o tutor" required />
+              </div>
+              <div class="mb-3">
+                <label class="form-label">Teléfono de contacto *</label>
+                <input type="tel" class="form-control custom-input" placeholder="Ej. 8888-8888" required />
+              </div>
+              <div class="mb-3">
+                <label class="form-label">Correo electrónico</label>
+                <input type="email" class="form-control custom-input" placeholder="correo@ejemplo.com" />
+              </div>
+              <div class="mb-4">
+                <label class="form-label">Comentarios adicionales</label>
+                <textarea class="form-control custom-input" rows="2" placeholder="Información adicional relevante..."></textarea>
+              </div>
+              <button type="submit" class="btn btn-gold w-100">
+                <i class="bi bi-send-fill me-2"></i>Enviar Solicitud de Matrícula
+              </button>
+            </form>
+          </div>
+
+          <!-- Descargas -->
+          <div class="download-block mt-3">
+            <h5><i class="bi bi-download me-2"></i>Formularios Descargables</h5>
+            <div class="download-links">
+              <a href="#" class="download-btn" onclick="showAlert('Formulario de Matrícula')">
+                <i class="bi bi-file-earmark-pdf-fill"></i>
+                Formulario de Matrícula 2025
+              </a>
+              <a href="#" class="download-btn" onclick="showAlert('Reglamento Estudiantil')">
+                <i class="bi bi-file-earmark-pdf-fill"></i>
+                Reglamento Estudiantil
+              </a>
+              <a href="#" class="download-btn" onclick="showAlert('Lista de Útiles')">
+                <i class="bi bi-file-earmark-pdf-fill"></i>
+                Lista de Útiles 2025
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════════
+       SECCIÓN: GALERÍA
+  ════════════════════════════════════════════════ -->
+  <section id="galeria" class="section-galeria">
+    <div class="container">
+      <div class="section-header text-center" data-aos="fade-up">
+        <span class="section-label">Nuestras Instalaciones</span>
+        <h2 class="section-title">Galería de Fotos</h2>
+        <div class="title-ornament"></div>
+      </div>
+
+      <!-- Filtros -->
+      <div class="gallery-filters text-center mb-4" data-aos="fade-up">
+        <button class="filter-btn active" data-filter="all">Todos</button>
+        <button class="filter-btn" data-filter="instalaciones">Instalaciones</button>
+        <button class="filter-btn" data-filter="actividades">Actividades</button>
+        <button class="filter-btn" data-filter="eventos">Eventos</button>
+      </div>
+
+      <!-- Grid de galería – ★ Reemplaza las URLs con tus fotos reales ★ -->
+      <div class="gallery-grid row g-3" id="galleryGrid">
+        <div class="col-6 col-md-4 col-lg-3 gallery-item" data-category="instalaciones">
+          <div class="gallery-thumb" onclick="openLightbox(this)">
+            <img src="https://ceapasocanoas.com/wp-content/uploads/2025/08/Imagen-de-WhatsApp-2025-08-16-a-las-16.58.36_376ac115-1536x864.jpg" />
+            <div class="gallery-overlay"><i class="bi bi-zoom-in"></i><span>Institucion</span></div>
+          </div>
+        </div>
+        <div class="col-6 col-md-4 col-lg-3 gallery-item" data-category="actividades">
+          <div class="gallery-thumb" onclick="openLightbox(this)">
+            <img src="https://scontent.ffon1-1.fna.fbcdn.net/v/t39.30808-6/499788135_674248492085031_8449519432063042480_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=833d8c&_nc_ohc=Vf17kJOa3aQQ7kNvwHxkqnw&_nc_oc=Ado-QJPXA_YIbWmYrD5q_WLU-A7MWaUevW5jlGhGmVP1NEb-KEu2VlwStdHCcDuc15I&_nc_zt=23&_nc_ht=scontent.ffon1-1.fna&_nc_gid=utoa_X88NwiEbl6KNhNaSA&_nc_ss=7b2a8&oh=00_Af4PGMqEnmE__j2wG4kViPJqEm0E4B2mRirtISsioXjSbw&oe=6A11C0D1" alt="Actividades estudiantiles" />
+            <div class="gallery-overlay"><i class="bi bi-zoom-in"></i><span>Actividades</span></div>
+          </div>
+        </div>
+        <div class="col-6 col-md-4 col-lg-3 gallery-item" data-category="eventos">
+          <div class="gallery-thumb" onclick="openLightbox(this)">
+            <img src="https://scontent.ffon1-1.fna.fbcdn.net/v/t39.30808-6/483101585_624690883707459_7578572509703695155_n.jpg?stp=cp6_dst-jpg_tt6&_nc_cat=102&ccb=1-7&_nc_sid=127cfc&_nc_ohc=C53cg2vgvLoQ7kNvwEEXnL8&_nc_oc=AdoJTKZDltJc9zCQ9Y5F-8-HJyNZuMb9Qnw4l6x9hnk4AyeaJmCb7MDKUXgYaeuXa6I&_nc_zt=23&_nc_ht=scontent.ffon1-1.fna&_nc_gid=xKOZC1s_nnR2rCMxvuFU1Q&_nc_ss=7b2a8&oh=00_Af6w9dHtHnOY8C-lYkxeRTM7k5I7ElbsD0e9H8VAkpv9aA&oe=6A11CC42" alt="Graduaciones" />
+            <div class="gallery-overlay"><i class="bi bi-zoom-in"></i><span>Graduaciones</span></div>
+          </div>
+        </div>
+        <div class="col-6 col-md-4 col-lg-3 gallery-item" data-category="instalaciones">
+          <div class="gallery-thumb" onclick="openLightbox(this)">
+            <img src="https://images.unsplash.com/photo-1541339907198-e08756dedf3f?w=600&q=80" alt="Biblioteca" />
+            <div class="gallery-overlay"><i class="bi bi-zoom-in"></i><span>Convivencia</span></div>
+          </div>
+        </div>
+        <div class="col-6 col-md-4 col-lg-3 gallery-item" data-category="actividades">
+          <div class="gallery-thumb" onclick="openLightbox(this)">
+            <img src="https://images.unsplash.com/photo-1509062522246-3755977927d7?w=600&q=80" alt="Educación en acción" />
+            <div class="gallery-overlay"><i class="bi bi-zoom-in"></i><span>Educación</span></div>
+          </div>
+        </div>
+        <div class="col-6 col-md-4 col-lg-3 gallery-item" data-category="eventos">
+          <div class="gallery-thumb" onclick="openLightbox(this)">
+            <img src="https://scontent.ffon1-1.fna.fbcdn.net/v/t39.30808-6/592891098_829885049854707_6005037365708932219_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=f727a1&_nc_ohc=KF8x5HAl0loQ7kNvwHMCdgM&_nc_oc=Adqtnk9MMekuqSE1LkkXdzwjgASDZH4iWWRylh0msItl3KzVc2MrrUhFatyzblgftRE&_nc_zt=23&_nc_ht=scontent.ffon1-1.fna&_nc_gid=TREN8ZyDe9ydKwgaBz4r0w&_nc_ss=7b2a8&oh=00_Af4svlcgwaHOjyC3nf7mppKRCDe-JVVvjKTXUwBPcJHSBg&oe=6A11A2F2" alt="Eventos especiales" />
+            <div class="gallery-overlay"><i class="bi bi-zoom-in"></i><span>Eventos</span></div>
+          </div>
+        </div>
+        <div class="col-6 col-md-4 col-lg-3 gallery-item" data-category="instalaciones">
+          <div class="gallery-thumb" onclick="openLightbox(this)">
+            <img src="https://scontent.ffon1-1.fna.fbcdn.net/v/t39.30808-6/667787592_929765079866703_1475177022149964686_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=833d8c&_nc_ohc=oquupSPjlZAQ7kNvwHXZII1&_nc_oc=AdqK9wNk7kLrtesMUFUWLZrEbTPZMbsQBcDDCJXN14Avdfemuq29Yh1GMX7xXSm0qRI&_nc_zt=23&_nc_ht=scontent.ffon1-1.fna&_nc_gid=bFpXifQCQzVDBcBguDoG-A&_nc_ss=7b2a8&oh=00_Af6XKx44F2V41Nui9tLPj3Gbo320Tpdk5AA6mgRdocJ69Q&oe=6A11BD14" alt="Cancha deportiva" />
+            <div class="gallery-overlay"><i class="bi bi-zoom-in"></i><span>Deportes</span></div>
+          </div>
+        </div>
+        <div class="col-6 col-md-4 col-lg-3 gallery-item" data-category="actividades">
+          <div class="gallery-thumb" onclick="openLightbox(this)">
+            <img src="https://scontent.ffon1-1.fna.fbcdn.net/v/t39.30808-6/571279411_802956739214205_7598541049517917591_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=127cfc&_nc_ohc=casBleT2mh4Q7kNvwHJ-MfR&_nc_oc=AdovY83BPSeuxgjz8hHnnU20XNreeHEGNisqbExEic_rYjkyBEVRSPhSFTyPbFy3I5g&_nc_zt=23&_nc_ht=scontent.ffon1-1.fna&_nc_gid=NKp10Z2v7qamgK8T8mCodw&_nc_ss=7b2a8&oh=00_Af4WqrpJKZdzFP5F9_510moK1Z58jtmZFtffl25B7k4hWw&oe=6A11D2AE" alt="Arte y música" />
+            <div class="gallery-overlay"><i class="bi bi-zoom-in"></i><span>Arte & Música</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Lightbox Modal -->
+  <div id="lightboxModal" class="lightbox-modal" onclick="closeLightbox()">
+    <button class="lightbox-close" onclick="closeLightbox()"><i class="bi bi-x-lg"></i></button>
+    <img id="lightboxImg" src="" alt="" />
+    <p id="lightboxCaption"></p>
+  </div>
+
+  <!-- ═══════════════════════════════════════════════
+       SECCIÓN: PLATAFORMAS DIGITALES
+  ════════════════════════════════════════════════ -->
+  <section id="plataformas" class="section-plataformas">
+    <div class="container">
+      <div class="section-header text-center" data-aos="fade-up">
+        <span class="section-label">Tecnología Educativa</span>
+        <h2 class="section-title">Plataformas Digitales</h2>
+        <div class="title-ornament title-ornament--light"></div>
+      </div>
+
+      <div class="row g-4 justify-content-center mb-5">
+        <!-- CloudCampus -->
+        <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="0">
+          <div class="platform-card platform-card--primary">
+            <div class="platform-icon"><i class="bi bi-cloud-fill"></i></div>
+            <h4>CloudCampus</h4>
+            <p>Realiza pagos de matrícula, mensualidades y otros servicios de forma segura y rápida desde la comodidad de tu hogar.</p>
+            <ul class="platform-features">
+              <li><i class="bi bi-check-circle-fill"></i> Pagos en línea seguros</li>
+              <li><i class="bi bi-check-circle-fill"></i> Estado de cuenta</li>
+              <li><i class="bi bi-check-circle-fill"></i> Historial de pagos</li>
+              <li><i class="bi bi-check-circle-fill"></i> Notificaciones automáticas</li>
+            </ul>
+            <a href="https://cloudcampuspro.com/home/indexP.html?p=10" target="_blank" class="btn btn-gold w-100 mt-3">
+              <i class="bi bi-box-arrow-up-right me-2"></i>Acceder a CloudCampus
+            </a>
+          </div>
+        </div>
+
+
+      <!-- Acceso rápido admin -->
+      
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════════
+       SECCIÓN: CONTACTO
+  ════════════════════════════════════════════════ -->
+  <section id="contacto" class="section-contacto">
+    <div class="container">
+      <div class="section-header text-center" data-aos="fade-up">
+        <span class="section-label">Estamos Para Servirte</span>
+        <h2 class="section-title">Contáctanos</h2>
+        <div class="title-ornament"></div>
+      </div>
+
+      <div class="row g-5">
+        <!-- Info de contacto -->
+        <div class="col-lg-5" data-aos="fade-right">
+          <div class="contact-info-block">
+            <div class="contact-info-item">
+              <div class="contact-icon"><i class="bi bi-geo-alt-fill"></i></div>
+              <div>
+                <h5>Dirección Física</h5>
+                <p>Paso Canoas, Corredores,<br />Puntarenas, Costa Rica.<br />Del cruce principal, 200 m norte.</p>
+              </div>
+            </div>
+            <div class="contact-info-item">
+              <div class="contact-icon"><i class="bi bi-telephone-fill"></i></div>
+              <div>
+                <h5>Teléfonos</h5>
+                <p>
+                  <a href="tel:+50627322886">+506 2732-2886</a><br />
+                  <a href="tel:+50627322886">+506 2732-2886</a>
+                </p>
+              </div>
+            </div>
+            <div class="contact-info-item">
+              <div class="contact-icon"><i class="bi bi-envelope-fill"></i></div>
+              <div>
+                <h5>Correos Electrónicos</h5>
+                <p>
+                  <a href="mailto:ceadvpc84@gmail.com">ceadvpc84@gmail.com</a><br />
+                </p>
+              </div>
+            </div>
+            <div class="contact-info-item">
+              <div class="contact-icon"><i class="bi bi-clock-fill"></i></div>
+              <div>
+                <h5>Horarios de Atención</h5>
+                <p>Lunes a Jueves 7:00 a.m. – 3:30 p.m <br />Viernes: 7:00 a.m. – 12:40 p.m.<br />Sábados: Cerrado<br />Domingos: Cerrado</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Redes sociales (se repiten en footer también) -->
+          <div class="social-block mt-4">
+            <h6 class="mb-3">Síguenos en redes sociales</h6>
+            <div class="social-icons">
+              <a href="https://www.facebook.com/CEAPASOCANOAS/" class="social-icon"aria-label="Facebook"target="_blank"><i class="bi bi-facebook"></i>
+              <a href="https://www.instagram.com/cea.pc/" class="social-icon" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+              <a href="https://wa.me/50685831081"" class="social-icon" aria-label="WhatsApp"><i class="bi bi-whatsapp"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Formulario de contacto -->
+        <div class="col-lg-7" data-aos="fade-left">
+          <div class="contact-form-card">
+            <h4 class="mb-4">Envíanos un Mensaje</h4>
+            <form id="formContacto" novalidate>
+              <div class="row g-3">
+                <div class="col-sm-6">
+                  <label class="form-label">Nombre completo *</label>
+                  <input type="text" class="form-control custom-input" placeholder="Tu nombre" required />
+                </div>
+                <div class="col-sm-6">
+                  <label class="form-label">Teléfono</label>
+                  <input type="tel" class="form-control custom-input" placeholder="8888-8888" />
+                </div>
+                <div class="col-12">
+                  <label class="form-label">Correo electrónico *</label>
+                  <input type="email" class="form-control custom-input" placeholder="correo@ejemplo.com" required />
+                </div>
+                <div class="col-12">
+                  <label class="form-label">Asunto *</label>
+                  <select class="form-select custom-input" required>
+                    <option value="" disabled selected>Selecciona un asunto</option>
+                    <option>Información sobre matrículas</option>
+                    <option>Consulta académica</option>
+                    <option>Pagos y finanzas</option>
+                    <option>Otro</option>
+                  </select>
+                </div>
+                <div class="col-12">
+                  <label class="form-label">Mensaje *</label>
+                  <textarea class="form-control custom-input" rows="4" placeholder="Escribe tu consulta aquí..." required></textarea>
+                </div>
+                <div class="col-12">
+                  <button type="submit" class="btn btn-navy w-100">
+                    <i class="bi bi-send-fill me-2"></i>Enviar Mensaje
+                  </button>
+                </div>
+              </div>
+            </form>
+          </div>
+
+          <!-- Mapa -->
+          <div class="map-container mt-4" data-aos="fade-up">
+            <h5 class="mb-3"><i class="bi bi-map-fill me-2"></i>Nuestra Ubicación</h5>
+            <!-- ★ Puedes reemplazar con un embed real de Google Maps para Paso Canoas ★ -->
+            <div class="map-embed">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15734.35!2d-82.8482!3d8.5223!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8fa2e8f3a1234567%3A0x1234567890abcdef!2sPaso%20Canoas%2C%20Costa%20Rica!5e0!3m2!1ses!2scr!4v1700000000000!5m2!1ses!2scr"
+                width="100%"
+                height="300"
+                style="border:0;"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+                title="Ubicación Centro Educativo Adventista de Paso Canoas">
+              </iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════════
+       FOOTER
+  ════════════════════════════════════════════════ -->
+  <footer class="site-footer">
+    <div class="footer-top">
+      <div class="container">
+        <div class="row g-5">
+          <!-- Columna 1: Logo y descripción -->
+          <div class="col-lg-4">
+            <div class="footer-brand d-flex align-items-center gap-2 mb-3">
+              <div class="logo-placeholder logo-placeholder--sm">
+                <i class="bi bi-mortarboard-fill"></i>
+              </div>
+              <div>
+                <div class="footer-brand-name">Colegio Adventista</div>
+                <div class="footer-brand-sub">Paso Canoas</div>
+              </div>
+            </div>
+            <p class="footer-desc">Formando líderes íntegros con valores adventistas para servir a Dios y a la humanidad desde la frontera sur de Costa Rica.</p>
+            <div class="social-icons mt-3">
+              <a href="https://www.facebook.com/CEAPASOCANOAS/" class="social-icon" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+              <a href="https://www.instagram.com/cea.pc/" class="social-icon" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+              <a href="https://wa.me/50685831081"" class="social-icon" aria-label="WhatsApp"><i class="bi bi-whatsapp"></i></a>
+            </div>
+          </div>
+
+          <!-- Columna 2: Enlace rápidos -->
+          <div class="col-sm-6 col-lg-2">
+            <h6 class="footer-heading">Navegación</h6>
+            <ul class="footer-links">
+              <li><a href="#inicio">Inicio</a></li>
+              <li><a href="#informacion">Información</a></li>
+              <li><a href="#matriculas">Matrículas</a></li>
+              <li><a href="#galeria">Galería</a></li>
+              <li><a href="#plataformas">Plataformas</a></li>
+              <li><a href="#contacto">Contacto</a></li>
+            </ul>
+          </div>
+
+          <!-- Columna 3: Plataformas -->
+          <div class="col-sm-6 col-lg-2">
+            <h6 class="footer-heading">Plataformas</h6>
+            <ul class="footer-links">
+              <li><a href="https://cloudcampuspro.com/home/indexP.html?p=10" target="_blank">CloudCampus</a></li>
+            </ul>
+          </div>
+
+          <!-- Columna 4: Contacto rápido -->
+          <div class="col-lg-4">
+            <h6 class="footer-heading">Contacto Rápido</h6>
+            <ul class="footer-contact-list">
+              <li><i class="bi bi-geo-alt-fill"></i> Paso Canoas, Corredores, Puntarenas</li>
+              <li><i class="bi bi-telephone-fill"></i> <a href="tel:+50627322886">+506 2732-2886</a></li>
+              <li><i class="bi bi-envelope-fill"></i> <a href="mailto:ceadvpc84@gmail.com">ceadvpc84@gmail</a></li>
+              <li><i class="bi bi-clock-fill"></i> Lun – Jue 7:00 a.m. – 3:30 p.m.  Vie: 7:00 a.m. – 12:30 m.d.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div class="container d-flex flex-wrap justify-content-between align-items-center gap-2">
+        <p class="mb-0">© <span id="footerYear"></span> Centro Educativo Adventista de Paso Canoas. Todos los derechos reservados.</p>
+        <div class="footer-bottom-links">
+          <a href="#">Política de Privacidad</a>
+          <a href="#">Términos de Uso</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Toast de confirmación -->
+  <div class="toast-container position-fixed bottom-0 end-0 p-3" style="z-index: 9999;">
+    <div id="successToast" class="toast align-items-center text-white bg-success border-0" role="alert">
+      <div class="d-flex">
+        <div class="toast-body"><i class="bi bi-check-circle-fill me-2"></i><span id="toastMsg">Mensaje enviado con éxito.</span></div>
+        <button type="button" class="btn-close btn-close-white me-2 m-auto" data-bs-dismiss="toast"></button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
